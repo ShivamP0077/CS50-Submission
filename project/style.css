@@ -1,0 +1,161 @@
+body{
+    background-color: black;
+    height:100vh;
+    overflow: hidden;
+}
+
+h1{
+    color:aliceblue;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.char {
+    border:2px solid #3A3A3C;
+    width:42px;
+    height:42px;
+    margin: 3px 3px;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 32px;
+    font-weight:bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keypad{
+    display: flex;
+    flex-direction: column;
+}
+
+.keys2{
+    align-self: center;
+}
+.keys3,.keys2,.keys1{
+    display: flex;
+    justify-content: center;
+    margin:2px;
+
+}
+button{
+    width: 33px;
+    height: 42px;
+    color:white;
+    font-size: 12px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 2px 3px;
+    background-color:#818384;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ffffff;
+    color:black;
+}
+.bkspc,.Enter{
+    width: 65px;
+}
+.Restart{
+    display: flex;
+    justify-content: center;
+}
+#btn{
+    width:fit-content;
+    height: 35px;
+    background-color: #04a324;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.message{
+    height:5px;
+}
+
+.flip-animation{
+    transform: rotatex(360deg);
+    transition: 1s;
+}
+/* Media query for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .keypad {
+        width: 100%;
+    }
+
+    .keys3, .keys2, .keys1 {
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 32px;
+        height: 42px;
+        font-size: 12px; /* Adjust font size for readability */
+        margin: 2px;
+    }
+
+    .bkspc, .Enter {
+        width: 45px;
+    }
+
+    .char {
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+    }
+
+
+}
+
+/* Media query for even smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .keypad {
+        width: 100%;
+        height: 100%;
+    }
+
+    .keys3, .keys2, .keys1 {
+        flex-direction: row;
+        margin-bottom: 5px; /* Further reduce margin */
+    }
+
+    button {
+        width: 25px;
+        height: 35px;
+        font-size: 10px; /* Adjust font size for smaller screens */
+        margin: 1px; /* Reduce margin for buttons */
+    }
+
+    .bkspc, .Enter {
+        width: 35px;
+    }
+
+    .char {
+        width: 25px;
+        height: 25px;
+    }
+
+
+}
