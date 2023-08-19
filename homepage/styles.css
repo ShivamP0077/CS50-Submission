@@ -1,0 +1,29 @@
+h1 {
+    color: blue;
+  }
+
+  .container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .nav-link {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+
+  
